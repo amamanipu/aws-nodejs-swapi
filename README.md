@@ -11,28 +11,32 @@ Seguir los siguientes pasos para usar el proyecto.
 - `https://nodejs.org/en/download`
 
 ### Instalar la dependencia serverless por npm a nivel global
-- Ejecutar en comando: `npm install -g serverless`
+- Ejecutar el comando: `npm install -g serverless`
+
+### Configurar las credenciales de AWS por comando serverless
+
+- Ejecutar el comando: `serverless config credentials --provider aws --key ${Your access key ID} --secret ${Your secret access key}`
+- Crear clave de acceso en AWS y reemplazar `${Your access key ID}` y `${Your secret access key}`
 
 ### Clonar el repositorio aws-nodejs-swapi
-- Ejecutar en comando: `git clone https://github.com/amamanipu/aws-nodejs-swapi.git`
+- Ejecutar el comando: `git clone https://github.com/amamanipu/aws-nodejs-swapi.git`
 
 ### Descargar las dependencias del proyecto
-- Ejecutar en comando: `npm install`
+- Ejecutar el comando: `npm install`
 
 ### Crear recursos y despliegue del proyecto en aws por comando serverless
-- Ejecutar en comando: `serverless deploy`
+- Ejecutar el comando: `serverless deploy`
 
 ### Levantar proyecto de manera local por comando serverless
-- Ejecutar en comando: `serverless offline`
+- Ejecutar el comando: `serverless offline`
 
 ### Ejecutar pruebas unitarias
-- Ejecutar en comando: `npm run test`
+- Ejecutar el comando: `npm run test`
 
 ### Swagger del API AWS-NODEJS-SWAPI
 
 - [Visualizar API en Swagger UI](https://app.swaggerhub.com/apis-docs/amamanipu/swapi-api/1.0.0)
 - En caso de tener corriendo el proyecto de modo local. Solo se necesita cambiar el `Servers` del Swagger UI a `API Local`
-
 
 ### Estructura del Proyecto
 
